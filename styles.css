@@ -103,7 +103,7 @@ header p {
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-color: white;
+   
 }
 
 .projects p {
@@ -126,7 +126,7 @@ header p {
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-color: #2282e2;
+   
 }
 
 .text {
