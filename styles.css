@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     width: 100%;
     margin: 0;
-    background-color: lightgrey;
+    background: linear-gradient(hsl(240, 22%, 50%), hsl(186, 26%, 52%), hsl(222, 12%, 45%));
 }
 
 nav {
@@ -26,7 +26,7 @@ nav ul {
 
 nav ul li {
     font-size: 24px;
-     color: #dfdfe2;
+    color: #dfdfe2;
 }
 
 nav ul li:hover {
@@ -35,20 +35,20 @@ nav ul li:hover {
     cursor: pointer;
 }
 
-li>a {
+li> a {
     color: inherit;
     text-decoration: none;
     font-weight: bold;
 }
 
 header {
-    padding-top: 8rem;
+    padding-top: 110px;
     width: 100%;
     background: linear-gradient(hsl(240, 56%, 42%), hsl(186, 76%, 16%), hsl(223, 90%, 60%));
 }
 
 header h1, p {
-    color: lightgreen;
+    color: rgb(136, 187, 136);
     letter-spacing: 1.5px;
     text-align: center;
 }
@@ -73,7 +73,7 @@ header p {
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    background: linear-gradient(45deg, rgb(203, 241, 228), rgb(80, 183, 255));
+    background: linear-gradient(45deg, rgb(42, 64, 126), rgb(118, 143, 189), rgb(163, 149, 158));
     border-radius: 20px 20px 0 0;
 }
 
@@ -103,12 +103,11 @@ header p {
     display: flex;
     flex-direction: column;
     width: 100%;
-   
 }
-
 .projects p {
     color: rgb(12, 3, 44);
     font-weight: bold;
+    font-size: 25px;
 }
 
 .projects img {
@@ -116,6 +115,7 @@ header p {
     height: 100%;
     object-fit: cover;
     border-radius: 20px 20px 20px 20px;
+    padding-top: 10px;
 }
 
 #contact {
@@ -126,7 +126,7 @@ header p {
     display: flex;
     flex-direction: column;
     width: 100%;
-   
+    
 }
 
 .text {
@@ -134,16 +134,18 @@ header p {
     flex-direction: column;
     align-items: center;
     border-radius: 20px;
-    padding-top: 5%;
+    padding: 10px 0px 10px 0%;
     background: linear-gradient(45deg, rgb(111, 241, 228), rgb(80, 183, 255));
 }
 
 .contact .text h2 {
     color: black;
+    font-weight: bold;
+    font-size: 18px;
 }
 .contact .text p {
     color: black;
-    line-height: 25px;    
+    line-height: 15px;    
 }
 
 
@@ -153,7 +155,12 @@ header p {
     align-items: center;
     width: 100%;
 }
-
+.normalcontacts p {
+    text-align: left;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+} 
 form {
     display: flex;
     flex-direction: column;
@@ -179,8 +186,8 @@ input[type="submit"] {
     margin-top: 20px;
     height: 2em;
     font-size: 1.1rem;
-    background-color: #48df93a1;
-    border-color: rgb(60, 62, 209);
+    background-color: #554bdda1;
+    border-color: rgb(197, 228, 126);
     width: 150px;
 }
 
@@ -189,20 +196,26 @@ input[type="submit"] {
     flex-direction: column;
     width: 100%;
     align-items: flex-start;
-    color: #307cc7;
     padding-bottom: 30px;
 }
 
 .othercontacts p {
-    text-align: justify;
+    text-align: left;
     color: black;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .othercontacts img {
-    height: 30px;
+    height: 20px;
     padding: 10px;
     margin: auto;
     padding-top: 5px;
+}
+.contactcontainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 footer {
@@ -213,76 +226,37 @@ footer {
     background: linear-gradient(hsl(240, 56%, 42%), hsl(186, 76%, 16%), hsl(223, 90%, 60%));
 }
 
-@media (min-width: 800px) {
+@media (min-width: 765px) {
+
     .welcome-section {
         flex-direction: row;
     }
-
-
-
-
+    .intro {
+        border-radius: 20px 20px 20px 20px;
+    }
+    .image img {
+        border-radius: 20px 20px 20px 20px;
+    }
+    #row2 {
+        display: flex;
+        flex-direction: row;
+        
+        width: 100%;
+        gap: 10px;
+    }
+        
+    .formlayout {
+        flex-direction: row;
+    }
+    .normalcontacts {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .othercontacts {
+        width: 100%;
+}      
+    .othercontacts img {
+            height: 2rem;
+        }
 }
-
-
-
-
-
-/*
-.projectstop {
-    display: flex;
-    height: 481px;
-    width: 100%;
-    background: linear-gradient(45deg, rgb(203, 241, 228), rgb(80, 183, 255));
-    margin: 10px 10px 0px 10px;
-    border-radius: 5px 5px 0px 0px;
-}
-
-.projectstop1 {
-    display: flex;
-    flex-direction: column;
-    height: 481px;
-    width: 740px;
-    background: linear-gradient(45deg, rgb(203, 241, 228), rgb(80, 183, 255));
-    margin: none;
-    border-radius: 5%;
-}
-
-.projectstop2 {
-    display: flex;
-    flex-direction: column;
-    height: 481px;
-    width: 740px;
-    background: linear-gradient(45deg, rgb(203, 241, 228), rgb(80, 183, 255));
-    margin: none;
-    border-radius: 5%;
-}
-
-.projectsbottom {
-    display: flex;
-    height: 481px;
-    width: 100%;
-    background: linear-gradient(45deg, rgb(203, 241, 228), rgb(80, 183, 255));
-    margin: 0px 10px 10px 10px;
-    border-radius: 0px 0px 5px 5px;
-}
-
-.projectsbottom1 {
-    display: flex;
-    flex-direction: column;
-    height: 481px;
-    width: 740px;
-    background: linear-gradient(45deg, rgb(203, 241, 228), rgb(80, 183, 255));
-    margin: none;
-    border-radius: 5%;
-}
-
-.projectsbottom2 {
-    display: flex;
-    flex-direction: column;
-    height: 481px;
-    width: 740px;
-    background: linear-gradient(45deg, rgb(203, 241, 228), rgb(80, 183, 255));
-    margin: none;
-    border-radius: 5%;
-}
-*/
