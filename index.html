@@ -43,8 +43,7 @@
                 <div>
                     <p>Click on the picture to see my work further</p>
                 </div>
-                <div id="row2">
-                    
+                <div class="row2">                    
                     <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-survey-form-project/build-a-survey-form">
                     <img src="survey form.jpg" alt="Survey Form Picture"></a>
                     <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-accessibility-by-building-a-quiz/step-67">
@@ -65,22 +64,24 @@
                 </div>
                 <div class="contactcontainer">
                     <div class="formlayout">
-                        <div class="normalcontacts">
                             <form method="post">
-                            <div class="normalcontacs">
-                                <p>Contact <Form></Form></p>
-                                <label for="name">Name<br>
-                                <input id="name" name="name" type="text" placeholder="Your Full Name Please" required />
-                                </label><br>
-                                <label for="email">Email<br>
-                                    <input id="email" name="email" type="email" placeholder="abcabc@xyz.com" required />
-                                </label><br>
-                                <label for="age">Age (optional)
-                                    <input id="number" type="number" name="age" min="13" max="120"
-                                        placeholder="Select from the given" optional />
-                                </label>
+                                <div class="normalcontacs">
+                                    <p>Contact
+                                    <Form></Form>
+                                    </p>
+                                    <label for="name">Name<br>
+                                        <input id="name" name="name" type="text" placeholder="Your Full Name Please" required />
+                                    </label><br>
+                                    <label for="email">Email<br>
+                                        <input id="email" name="email" type="email" placeholder="abcabc@xyz.com" required />
+                                    </label><br>
+                                    <label for="age">Age (optional)
+                                        <input id="number" type="number" name="age" min="13" max="120" placeholder="Select from the given"
+                                            optional />
+                                    </label>
+                                </div>
                             </form>
-                            </div>
+                       
                             <div class="reccom">
                                 <label> Would you please recommend this page to a others. . .</label><br>
                                 <label for="yes"><input id="yes" type="radio" name="recommendation" value="yes" /> Yes</label>
@@ -89,9 +90,11 @@
                                     be</label>
                                 <input id="submit" type="submit" value="SEND" />
                             </div>
-                        </div>
                         <div class="othercontacts">
-                            <p>Contact me via E-Mail: wasimhussain3@gmail.com</p>
+                            <div>
+                                <p>Contact me via E-Mail: </p>
+                                <p>wasimhussain3@gmail.com</p>
+                            </div>
                             <div>
                                 <a href="https://www.facebook.com/itsWasimBukhari">
                                 <img src="fv.png" alt="Click for facebook profile">
@@ -116,7 +119,7 @@
         
         <footer>
             <p>This is an Assignment Project for submission to HACK YOUR FUTURE class 31.</p>
-            <p>NoCopyrigthsWASIM</p>
+            <p class="copy">NoCopyrigthsWASIM</p>
         </footer>
     </body>
 </html>
