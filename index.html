@@ -1,267 +1,122 @@
-body {
-    font-family: Arial, sans-serif;
-    width: 100%;
-    margin: 0;
-    background: linear-gradient(hsl(240, 22%, 50%), hsl(186, 26%, 52%), hsl(222, 12%, 45%));
-}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Wasim's Portfolio</title>
+    </head>
 
-nav {
-    position: fixed;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 5rem;
-    background-color: hsl(240, 68%, 37%);
-}
+    <body>
+        <nav id="navbar" class="nav">
+            <ul class=>
+                <li><a href="#welcome-section">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
 
-nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 10%;
-    width: 100%;
-    list-style-type: none;
-    margin-left: -4%;
-}
+        <header>
+            <h1>SAYYED WASIM HUSSAIN BUKHARI</h1>
+            <p>Full Stack Developer (Trainee)</p>
+        </header>
 
-nav ul li {
-    font-size: 24px;
-    color: #dfdfe2;
-}
+        <section id="welcome-section">
+            <div class="welcome-section">
+                <div class="intro">
+                    <p> I can provide solution in transforming your business to e commerce.
+                        You can get design, development and
+                        back end support at the same place.
+                    </p>
+                    <p> Have a glimpse of my work
+                        <a href="#projects"> here<span class="material-symbols-outlined">highlight_mouse_cursor</span></a>
+                    </p>
+                </div>
+                <div class="image">
+                    <img src="https://ca.slack-edge.com/T428UGBJA-U086WDM2328-54b75f219606-512" alt="Wasim Photo">
+                </div>
+        </section>
 
-nav ul li:hover {
-    background-color: lightgreen;
-    color: blue;
-    cursor: pointer;
-}
+        <section id="projects">
+            <div class="projects">
+                <div>
+                    <p>Click on the picture to see my work further</p>
+                </div>
+                <div id="row2">
+                    
+                    <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-survey-form-project/build-a-survey-form">
+                    <img src="survey form.jpg" alt="Survey Form Picture"></a>
+                    <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-accessibility-by-building-a-quiz/step-67">
+                    <img src="quizz.jpg" alt="Quizz Page Picture"></a>
+                    <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-css-transforms-by-building-a-penguin/step-104">
+                    <img src="penguin.jpg" alt="Penguin Animation Page Picture"></a>
+                    <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-basic-css-by-building-a-cafe-menu/step-91">
+                    <img src="cafemenu.jpg" alt="Cafe Menu Page Picture"></a>
+                </div>    
+            </div>
+        </section>
 
-li> a {
-    color: inherit;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-header {
-    padding-top: 110px;
-    width: 100%;
-    background: linear-gradient(hsl(240, 56%, 42%), hsl(186, 76%, 16%), hsl(223, 90%, 60%));
-}
-
-header h1, p {
-    color: rgb(136, 187, 136);
-    letter-spacing: 1.5px;
-    text-align: center;
-}
-
-header p {
-    font-style: italic;
-    padding-bottom: 20px;
-}
-
-#welcome-selection {
-    width: 100%;
-}
-
-.welcome-section {
-    display: flex;
-    flex-direction: column;
-    padding: 2% 3% 2% 3%;
-}
-
-.intro {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    background: linear-gradient(45deg, rgb(42, 64, 126), rgb(118, 143, 189), rgb(163, 149, 158));
-    border-radius: 20px 20px 0 0;
-}
-
-.intro p {
-    color: darkblue;
-    letter-spacing: 1.5px;
-    line-height: 2;
-    text-align: center;
-}
-
-.image {
-    width: 100%;
-}
-
-.image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 0 0 20px 20px;
-}
-
-#projects {
-    padding: 2% 3% 2% 3%;
-}
-
-.projects {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-.projects p {
-    color: rgb(12, 3, 44);
-    font-weight: bold;
-    font-size: 25px;
-}
-
-.projects img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 20px 20px 20px 20px;
-    padding-top: 10px;
-}
-
-#contact {
-    padding: 2% 3% 2% 3%;
-}
-
-.contact {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    
-}
-
-.text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 20px;
-    padding: 10px 0px 10px 0%;
-    background: linear-gradient(45deg, rgb(111, 241, 228), rgb(80, 183, 255));
-}
-
-.contact .text h2 {
-    color: black;
-    font-weight: bold;
-    font-size: 18px;
-}
-.contact .text p {
-    color: black;
-    line-height: 15px;    
-}
-
-
-.contactcontainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-.normalcontacts p {
-    text-align: left;
-    color: black;
-    font-weight: bold;
-    font-size: 20px;
-} 
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-.formlayout {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-top: 20px;
-    width: 80%;
-}
-
-.reccom {
-    display: flex;
-    flex-direction: column;
-    padding-top: 35px;
-    width: 100%;
-}
-
-input[type="submit"] {
-    display: block;
-    margin-top: 20px;
-    height: 2em;
-    font-size: 1.1rem;
-    background-color: #554bdda1;
-    border-color: rgb(197, 228, 126);
-    width: 150px;
-}
-
-.othercontacts {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: flex-start;
-    padding-bottom: 30px;
-}
-
-.othercontacts p {
-    text-align: left;
-    color: black;
-    font-weight: bold;
-    font-size: 20px;
-}
-
-.othercontacts img {
-    height: 20px;
-    padding: 10px;
-    margin: auto;
-    padding-top: 5px;
-}
-.contactcontainer {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-footer {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    bottom: 0;
-    background: linear-gradient(hsl(240, 56%, 42%), hsl(186, 76%, 16%), hsl(223, 90%, 60%));
-}
-
-@media (min-width: 765px) {
-
-    .welcome-section {
-        flex-direction: row;
-    }
-    .intro {
-        border-radius: 20px 20px 20px 20px;
-    }
-    .image img {
-        border-radius: 20px 20px 20px 20px;
-    }
-    #row2 {
-        display: flex;
-        flex-direction: row;
+        <section id="contact">
+            <div class="contact">
+                <div class="text">
+                    <h2>CONTACT ME</h2>
+                    <p><i>To get in touch please fill it out or use my Profile Links </i></p>
+                </div>
+                <div class="contactcontainer">
+                    <div class="formlayout">
+                        <div class="normalcontacts">
+                            <form method="post">
+                            <div class="normalcontacs">
+                                <p>Contact <Form></Form></p>
+                                <label for="name">Name<br>
+                                <input id="name" name="name" type="text" placeholder="Your Full Name Please" required />
+                                </label><br>
+                                <label for="email">Email<br>
+                                    <input id="email" name="email" type="email" placeholder="abcabc@xyz.com" required />
+                                </label><br>
+                                <label for="age">Age (optional)
+                                    <input id="number" type="number" name="age" min="13" max="120"
+                                        placeholder="Select from the given" optional />
+                                </label>
+                            </form>
+                            </div>
+                            <div class="reccom">
+                                <label> Would you please recommend this page to a others. . .</label><br>
+                                <label for="yes"><input id="yes" type="radio" name="recommendation" value="yes" /> Yes</label>
+                                <label for="no"><input id="no" type="radio" name="recommendation" value="no" /> No</label>
+                                <label for="maybe"> <input id="maybe" type="radio" name="recommendation" value="maybe" /> May
+                                    be</label>
+                                <input id="submit" type="submit" value="SEND" />
+                            </div>
+                        </div>
+                        <div class="othercontacts">
+                            <p>Contact me via E-Mail: wasimhussain3@gmail.com</p>
+                            <div>
+                                <a href="https://www.facebook.com/itsWasimBukhari">
+                                <img src="fv.png" alt="Click for facebook profile">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://www.linkedin.com/in/sayyed-wasim-hussain-bukhari-041342299/"> 
+                                <img src="ln.png" alt="Click for linkedin profile"></a>
+                            </div>
+                            <div>
+                                <a href="https://www.freecodecamp.org/WasimBukhari">
+                                <img src="fcc.png" alt="Click for FCC profile"></a>
+                            </div>
+                            <div>
+                                <a href="https://codepen.io/Wasim51214"> <img src="cp.png"
+                                        alt="Click for CodePen profile"></a><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
         
-        width: 100%;
-        gap: 10px;
-    }
-        
-    .formlayout {
-        flex-direction: row;
-    }
-    .normalcontacts {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-    .othercontacts {
-        width: 100%;
-}      
-    .othercontacts img {
-            height: 2rem;
-        }
-}
-
-
-
-
-
+        <footer>
+            <p>This is an Assignment Project for submission to HACK YOUR FUTURE class 31.</p>
+            <p>NoCopyrigthsWASIM</p>
+        </footer>
+    </body>
+</html>
